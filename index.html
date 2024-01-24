@@ -31,19 +31,39 @@
 
         <!-- Navbar Section -->
         <nav class="flex justify-between items-center py-5">
-            <h1 class="text-3xl font-bold">Hockey’s</h1>
-            <div>
-                <ul class="flex gap-4">
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="pages">Pages</a></li>
-                    <li><a href="blog">Blogs</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-3">
-                <img width="30px" height="30px" src="./images/icon/magnifying-glass.png" alt="">
-                <button class="btn bg-[#FF4240]">Get Ticket</button>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-lg" href="">Home</a></li>
+                            <li><a class="text-lg" href="">About</a></li>
+                            <li><a class="text-lg" href="">Pages</a></li>
+                            <li><a class="text-lg" href="">Blogs</a></li>
+                            <li><a class="text-lg" href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl font-bold">Hockey<span class="text-orange-600">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-lg" href="">Home</a></li>
+                        <li><a class="text-lg" href="">About</a></li>
+                        <li><a class="text-lg" href="">Pages</a></li>
+                        <li><a class="text-lg" href="">Blogs</a></li>
+                        <li><a class="text-lg" href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-lg">Button</a>
+                </div>
             </div>
 
 
@@ -94,7 +114,8 @@
 
             <div class="max-w-lg mx-auto text-center space-y-4">
                 <h1 class="text-4xl font-bold space-y-4">Professional Hockeys Club</h1>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
 
@@ -102,22 +123,22 @@
                 <div class="text-center space-y-5">
                     <div class="radial-progress text-rose-700" style="--value:87;" role="progressbar">87%</div>
                     <h1 class="text-3xl">Prayer Facility</h1>
-                    <p>Amet consectetur. Condimentum dignissim adipiscing.</p>
+                    <p class="text-slate-400">Amet consectetur. Condimentum dignissim adipiscing.</p>
                 </div>
                 <div class="text-center space-y-5">
                     <div class="radial-progress text-emerald-500" style="--value:95;" role="progressbar">95%</div>
                     <h1 class="text-3xl">Prayer Facility</h1>
-                    <p>Amet consectetur. Condimentum dignissim adipiscing.</p>
+                    <p class="text-slate-400">Amet consectetur. Condimentum dignissim adipiscing.</p>
                 </div>
                 <div class="text-center space-y-5">
                     <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
                     <h1 class="text-3xl">Prayer Facility</h1>
-                    <p>Amet consectetur. Condimentum dignissim adipiscing.</p>
+                    <p class="text-slate-400">Amet consectetur. Condimentum dignissim adipiscing.</p>
                 </div>
                 <div class="text-center space-y-5">
                     <div class="radial-progress text-sky-500" style="--value:80;" role="progressbar">80%</div>
                     <h1 class="text-3xl">Prayer Facility</h1>
-                    <p class="text-base">Amet consectetur. Condimentum dignissim adipiscing.</p>
+                    <p class="text-slate-400">Amet consectetur. Condimentum dignissim adipiscing.</p>
                 </div>
             </div>
 
@@ -128,11 +149,12 @@
 
             <div class="max-w-lg mx-auto text-center space-y-4">
                 <h1 class="text-4xl font-bold space-y-4">Program Sections</h1>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
 
-            <div class="grid lg:grid-cols-2  gap-4">
+            <div class="grid lg:grid-cols-2  gap-4 mt-10">
 
                 <div class="w-full bg-no-repeat relative">
                     <img src="./images/2.png" alt="">
@@ -160,7 +182,7 @@
                     </div>
 
                 </div>
-                <div class="w-full rounded-lg col-span-2 bg-no-repeat relative">
+                <div class="w-full rounded-lg lg:col-span-2 bg-no-repeat relative">
                     <img src="./images/4.png" alt="">
                     <div class="card-body mt-20 max-w-xl absolute bottom-5">
                         <h2 class=" lg:text-3xl font-bold text-white">Junior Program</h2>
@@ -184,7 +206,8 @@
 
             <div class="max-w-lg mx-auto text-center space-y-4">
                 <h1 class="text-4xl font-bold space-y-4">Our New Products</h1>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
 
@@ -212,7 +235,8 @@
 
                         <div>
                             <h2 class="card-title font-bold">World Cup Flags Football</h2>
-                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                            <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                                turpis placerat dolor.
                                 Purus urna in sit nullam proin. </p>
                         </div>
 
@@ -220,7 +244,7 @@
                             <h1 class="text-xl text-[#FF4240] font-bold">Price - $22.00</h1>
                             <div class="flex items-center gap-2">
                                 <img width="24px" height="24px" src="./images/shopping-cart.png" alt="">
-                                <h2 class="text-xl">Delivery Fee: Free</h2>
+                                <h2 class="text-xl text-slate-400">Delivery Fee: Free</h2>
                             </div>
                         </div>
                     </div>
@@ -247,7 +271,8 @@
 
                         <div>
                             <h2 class="card-title font-bold">New movie is released!</h2>
-                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                            <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                                turpis placerat dolor.
                                 Purus urna in sit nullam proin.</p>
                         </div>
 
@@ -255,7 +280,7 @@
                             <h1 class="text-xl text-[#FF4240] font-bold">Price - $22.00</h1>
                             <div class="flex items-center gap-2">
                                 <img width="24px" height="24px" src="./images/shopping-cart.png" alt="">
-                                <h2 class="text-xl">Delivery Fee: Free</h2>
+                                <h2 class="text-xl text-slate-400">Delivery Fee: Free</h2>
                             </div>
                         </div>
                     </div>
@@ -282,7 +307,8 @@
 
                         <div>
                             <h2 class="card-title font-bold">New movie is released!</h2>
-                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                            <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                                turpis placerat dolor.
                                 Purus urna in sit nullam proin.</p>
                         </div>
 
@@ -290,7 +316,7 @@
                             <h1 class="text-xl text-[#FF4240] font-bold">Price - $22.00</h1>
                             <div class="flex items-center gap-2">
                                 <img width="24px" height="24px" src="./images/shopping-cart.png" alt="">
-                                <h2 class="text-xl">Delivery Fee: Free</h2>
+                                <h2 class="text-xl text-slate-400">Delivery Fee: Free</h2>
                             </div>
                         </div>
                     </div>
@@ -317,7 +343,8 @@
 
                         <div>
                             <h2 class="card-title font-bold">New movie is released!</h2>
-                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                            <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                                turpis placerat dolor.
                                 Purus urna in sit nullam proin.</p>
                         </div>
 
@@ -325,7 +352,7 @@
                             <h1 class="text-xl text-[#FF4240] font-bold">Price - $22.00</h1>
                             <div class="flex items-center gap-2">
                                 <img width="24px" height="24px" src="./images/shopping-cart.png" alt="">
-                                <h2 class="text-xl">Delivery Fee: Free</h2>
+                                <h2 class="text-xl text-slate-400">Delivery Fee: Free</h2>
                             </div>
                         </div>
                     </div>
@@ -352,7 +379,8 @@
 
                         <div>
                             <h2 class="card-title font-bold">New movie is released!</h2>
-                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                            <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                                turpis placerat dolor.
                                 Purus urna in sit nullam proin.</p>
                         </div>
 
@@ -360,7 +388,7 @@
                             <h1 class="text-xl text-[#FF4240] font-bold">Price - $22.00</h1>
                             <div class="flex items-center gap-2">
                                 <img width="24px" height="24px" src="./images/shopping-cart.png" alt="">
-                                <h2 class="text-xl">Delivery Fee: Free</h2>
+                                <h2 class="text-xl text-slate-400">Delivery Fee: Free</h2>
                             </div>
                         </div>
                     </div>
@@ -387,7 +415,8 @@
 
                         <div>
                             <h2 class="card-title font-bold">New movie is released!</h2>
-                            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                            <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                                turpis placerat dolor.
                                 Purus urna in sit nullam proin.</p>
                         </div>
 
@@ -395,7 +424,7 @@
                             <h1 class="text-xl text-[#FF4240] font-bold">Price - $22.00</h1>
                             <div class="flex items-center gap-2">
                                 <img width="24px" height="24px" src="./images/shopping-cart.png" alt="">
-                                <h2 class="text-xl">Delivery Fee: Free</h2>
+                                <h2 class="text-xl text-slate-400">Delivery Fee: Free</h2>
                             </div>
                         </div>
                     </div>
@@ -411,7 +440,8 @@
 
             <div class="max-w-lg mx-auto text-center space-y-4">
                 <h1 class="text-4xl font-bold space-y-4">Clients Question</h1>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
 
@@ -424,7 +454,7 @@
                             Focus me to see content
                         </div>
                         <div class="collapse-content">
-                            <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                            <p class="text-slate-400">tabindex="0" attribute is necessary to make the div focusable</p>
                         </div>
                     </div>
 
@@ -433,7 +463,7 @@
                             Focus me to see content
                         </div>
                         <div class="collapse-content">
-                            <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                            <p class="text-slate-400">tabindex="0" attribute is necessary to make the div focusable</p>
                         </div>
                     </div>
 
@@ -442,7 +472,7 @@
                             Focus me to see content
                         </div>
                         <div class="collapse-content">
-                            <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                            <p class="text-slate-400">tabindex="0" attribute is necessary to make the div focusable</p>
                         </div>
                     </div>
 
@@ -451,7 +481,7 @@
                             Focus me to see content
                         </div>
                         <div class="collapse-content">
-                            <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                            <p class="text-slate-400">tabindex="0" attribute is necessary to make the div focusable</p>
                         </div>
                     </div>
 
@@ -460,7 +490,7 @@
                             Focus me to see content
                         </div>
                         <div class="collapse-content">
-                            <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                            <p class="text-slate-400">tabindex="0" attribute is necessary to make the div focusable</p>
                         </div>
                     </div>
                     <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
@@ -468,7 +498,7 @@
                             Focus me to see content
                         </div>
                         <div class="collapse-content">
-                            <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                            <p class="text-slate-400">tabindex="0" attribute is necessary to make the div focusable</p>
                         </div>
                     </div>
                 </div>
@@ -480,70 +510,70 @@
 
         <!-- Get In Touch Section -->
 
-        <section class="max-w-6xl mx-auto my-20">
+        <section class="max-w-6xl mx-auto">
 
             <div class="max-w-lg mx-auto text-center space-y-4">
                 <h1 class="text-4xl font-bold space-y-4">Get In Touch</h1>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
 
-            <div class="lg:flex mt-10 p-16 gap-10">
+            <div class="lg:flex  p-8 gap-10 space-y-6">
                 <!-- left part -->
-                <div class="grid grid-cols-1 gap-4 w-[40%]">
-                    <div class="bg-[#FDE767] w-96 rounded-lg p-8 space-y-5">
+                <div class="grid grid-cols-1 gap-4 lg:w-[40%]">
+                    <div class="bg-yellow-50 w-96 rounded-lg p-6 space-y-5 mx-auto">
                         <img src="./images/Group 1171275317.png" alt="">
-                        <h2>Phone Number</h2>
+                        <h2 class="text-slate-400">Phone Number</h2>
                         <h1 class="font-bold text-2xl">+0144558874</h1>
                     </div>
-                    <div class="bg-[#FDE767] w-96 rounded-lg p-8 space-y-5">
+                    <div class="bg-amber-50 w-96 rounded-lg p-6 space-y-5 mx-auto">
                         <img src="./images/Group 1171275318.png" alt="">
-                        <h2>E-mail</h2>
+                        <h2 class="text-slate-400">E-mail</h2>
                         <h1 class="font-bold text-xl">promitmondol21@gmail.com</h1>
                     </div>
-                    <div class="bg-[#FDE767] w-96 rounded-lg p-8 space-y-5">
+                    <div class="bg-gray-100 w-96 rounded-lg p-6 space-y-5 mx-auto">
                         <img src="./images/Group 1171275321.png" alt="">
-                        <h2>Location</h2>
+                        <h2 class="text-slate-400">Location</h2>
                         <h1 class="font-bold text-xl">#01, #01, Nawabgonj, Dhaka</h1>
                     </div>
                 </div>
 
                 <!-- right part -->
-                <div class=" border-4 w-[60%] ">
+                <div class="lg:w-[60%]">
 
-                    <div class="grid lg:grid-cols-2 gap-5 space-y-4">
+                    <div class="grid lg:grid-cols-2 gap-5 space-y-2 mx-auto">
                         <div>
-                            <label for="">Your Name:</label> <br>
-                            <input class="lg:w-72 rounded-lg p-4 bg-slate-300" type="text"
-                                placeholder="Enter Your Name">
+                            <label for="" class="text-lg font-bold mb-4">Your Name:</label> <br>
+                            <input class=" rounded-lg p-4 bg-zinc-100 w-full" type="text" placeholder="Enter Your Name">
                         </div>
                         <div>
-                            <label for="">Your E-mail:</label> <br>
-                            <input class="lg:w-72 rounded-lg p-4 bg-slate-300" type="text"
+                            <label for="" class="text-lg font-bold mb-4">Your E-mail:</label> <br>
+                            <input class="lg:w-72 rounded-lg p-4 bg-zinc-100 w-full" type="text"
                                 placeholder="Enter Your E-mail">
                         </div>
 
                         <div>
-                            <label for="">Subject</label> <br>
-                            <input class="lg:w-72 rounded-lg p-4 bg-slate-300" type="text"
+                            <label for="" class="text-lg font-bold mb-4">Subject</label> <br>
+                            <input class="lg:w-72 rounded-lg p-4 bg-zinc-100 w-full" type="text"
                                 placeholder="Enter Your Subject">
                         </div>
 
                         <div>
-                            <label for="">Phone Number</label> <br>
-                            <input class="lg:w-72 rounded-lg p-4 bg-slate-300" type="text"
+                            <label for="" class="text-lg font-bold mb-4">Phone Number</label> <br>
+                            <input class="lg:w-72 rounded-lg p-4 bg-zinc-100 w-full" type="text"
                                 placeholder="Enter Your Number">
                         </div>
 
                         <div class="lg:col-span-2">
-                            <label for="">Massage</label> <br>
-                            <textarea class="bg-slate-600" name="" id="" lg:cols="65"
+                            <label for="" class="text-lg font-bold mb-4">Massage</label> <br>
+                            <textarea class="bg-zinc-100 w-full rounded-lg p-6" name="" id="" lg:cols="80"
                                 rows="10">Write Your Massage</textarea>
                         </div>
 
                     </div>
                     <div>
-                        <button class="btn btn-error w-full">Send Message</button>
+                        <button class="btn btn-error w-full text-xl text-white">Send Message</button>
                     </div>
 
                 </div>
@@ -551,14 +581,14 @@
         </section>
 
         <!-- Social Media Section -->
-        <section class="max-w-6xl mx-auto my-20 space-y-10 text-center bg-slate-400 rounded-lg p-12">
+        <section class="max-w-6xl mx-auto my-20 space-y-10 text-center bg-zinc-100 rounded-xl p-12">
 
-            <h1 class="text-4xl font-bold">Social Media</h1>
+            <h1 class="text-3xl font-bold">Social Media</h1>
             <div class="flex justify-center items-center gap-10">
-                <img src="./images/icon/Facebook.png" alt="">
-                <img src="./images/icon/Instagram.png" alt="">
-                <img src="./images/icon/Linkedin.png" alt="">
-                <img src="./images/icon/Twitter.png" alt="">
+                <img width="50px" height="50px" src="./images/icon/Facebook.png" alt="">
+                <img width="50px" height="50px" src="./images/icon/Instagram.png" alt="">
+                <img width="50px" height="50px" src="./images/icon/Linkedin.png" alt="">
+                <img width="50px" height="50px" src="./images/icon/Twitter.png" alt="">
             </div>
 
         </section>
@@ -566,11 +596,11 @@
 
     </main>
 
-    <footer class="bg-neutral text-neutral-content">
+    <footer class="bg-[#131318] text-neutral-content">
 
-        <div class="max-w-6xl mx-auto lg:flex justify-between">
-            <div class="w-96 p-10">
-                <h1>Get In Touch</h1>
+        <div class="max-w-6xl mx-auto lg:flex justify-between items-center lg:p-20">
+            <div class="w-96 p-10 lg:space-y-6 lg:text-left text-center mx-auto">
+                <h1 class="text-3xl text-white">Get In Touch</h1>
                 <p>Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam
                     proin. </p>
                 <div class="flex items-center gap-4">
@@ -583,23 +613,23 @@
                 </div>
             </div>
 
-            <div class="footer p-10 justify-around">
-                <nav>
-                    <header class="footer-title">Services</header>
+            <div class="footer lg:p-10 flex flex-wrap justify-around">
+                <nav class="w-40 p-8">
+                    <header class="text-2xl text-white">Services</header>
                     <a class="link link-hover">Branding</a>
                     <a class="link link-hover">Design</a>
                     <a class="link link-hover">Marketing</a>
                     <a class="link link-hover">Advertisement</a>
                 </nav>
-                <nav>
-                    <header class="footer-title">Company</header>
+                <nav class="w-40 p-8">
+                    <header class="text-2xl text-white">Company</header>
                     <a class="link link-hover">About us</a>
                     <a class="link link-hover">Contact</a>
                     <a class="link link-hover">Jobs</a>
                     <a class="link link-hover">Press kit</a>
                 </nav>
-                <nav>
-                    <header class="footer-title">Legal</header>
+                <nav class="w-40 p-8">
+                    <header class="text-2xl text-white">Legal</header>
                     <a class="link link-hover">Terms of use</a>
                     <a class="link link-hover">Privacy policy</a>
                     <a class="link link-hover">Cookie policy</a>
